@@ -27,12 +27,13 @@ public class LoginPage {
         this.questions = new Questions(driver);
     }
 
-    //esto es un metodo
+
     public void fillOutLogin(String userName, String password) {
         this.txtUser.sendKeys(userName);
         this.txtPass.sendKeys(password);
         this.buttonPages.btnLogin();
         this.questions.timeSeconds(2);
+        //comentario
         this.questions.screenShot();
     }
 
